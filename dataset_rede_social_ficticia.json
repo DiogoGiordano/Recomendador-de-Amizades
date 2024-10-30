@@ -1,0 +1,261 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Alice"
+        },
+        {
+            "id": 2,
+            "nome": "Bob"
+        },
+        {
+            "id": 3,
+            "nome": "Charlie"
+        },
+        {
+            "id": 4,
+            "nome": "Diana"
+        },
+        {
+            "id": 5,
+            "nome": "Eva"
+        },
+        {
+            "id": 6,
+            "nome": "Frank"
+        },
+        {
+            "id": 7,
+            "nome": "Grace"
+        }
+    ],
+    "amizades": [
+        {
+            "usuario1_id": 1,
+            "usuario2_id": 2,
+            "data_inicio": "2020-01-15"
+        },
+        {
+            "usuario1_id": 1,
+            "usuario2_id": 3,
+            "data_inicio": "2022-03-20"
+        },
+        {
+            "usuario1_id": 1,
+            "usuario2_id": 4,
+            "data_inicio": "2023-05-10"
+        },
+        {
+            "usuario1_id": 2,
+            "usuario2_id": 3,
+            "data_inicio": "2021-07-05"
+        },
+        {
+            "usuario1_id": 2,
+            "usuario2_id": 5,
+            "data_inicio": "2022-11-30"
+        },
+        {
+            "usuario1_id": 3,
+            "usuario2_id": 4,
+            "data_inicio": "2023-01-22"
+        },
+        {
+            "usuario1_id": 4,
+            "usuario2_id": 5,
+            "data_inicio": "2022-09-18"
+        },
+        {
+            "usuario1_id": 5,
+            "usuario2_id": 6,
+            "data_inicio": "2023-04-07"
+        },
+        {
+            "usuario1_id": 6,
+            "usuario2_id": 7,
+            "data_inicio": "2023-06-14"
+        }
+    ],
+    "mensagens": [
+        {
+            "remetente_id": 1,
+            "destinatario_id": 2,
+            "data": "2023-07-01",
+            "conteudo": "Oi Bob, como vai?"
+        },
+        {
+            "remetente_id": 2,
+            "destinatario_id": 1,
+            "data": "2023-07-01",
+            "conteudo": "Oi Alice, tudo bem!"
+        },
+        {
+            "remetente_id": 1,
+            "destinatario_id": 2,
+            "data": "2023-07-02",
+            "conteudo": "Que bom! Vamos marcar algo?"
+        },
+        {
+            "remetente_id": 2,
+            "destinatario_id": 1,
+            "data": "2023-07-02",
+            "conteudo": "Claro, que tal sábado?"
+        },
+        {
+            "remetente_id": 1,
+            "destinatario_id": 2,
+            "data": "2023-07-03",
+            "conteudo": "Perfeito! Onde?"
+        },
+        {
+            "remetente_id": 2,
+            "destinatario_id": 1,
+            "data": "2023-07-03",
+            "conteudo": "Que tal aquele café novo?"
+        },
+        {
+            "remetente_id": 1,
+            "destinatario_id": 3,
+            "data": "2023-07-04",
+            "conteudo": "E aí, Charlie?"
+        },
+        {
+            "remetente_id": 3,
+            "destinatario_id": 1,
+            "data": "2023-07-04",
+            "conteudo": "Oi Alice, tudo certo?"
+        },
+        {
+            "remetente_id": 1,
+            "destinatario_id": 4,
+            "data": "2023-07-05",
+            "conteudo": "Diana, como estão as coisas?"
+        },
+        {
+            "remetente_id": 4,
+            "destinatario_id": 1,
+            "data": "2023-07-05",
+            "conteudo": "Oi Alice, tudo tranquilo por aqui!"
+        },
+        {
+            "remetente_id": 2,
+            "destinatario_id": 3,
+            "data": "2023-07-06",
+            "conteudo": "Charlie, vamos jogar hoje?"
+        },
+        {
+            "remetente_id": 3,
+            "destinatario_id": 2,
+            "data": "2023-07-06",
+            "conteudo": "Claro, Bob! Que horas?"
+        },
+        {
+            "remetente_id": 2,
+            "destinatario_id": 3,
+            "data": "2023-07-06",
+            "conteudo": "Às 20h está bom?"
+        },
+        {
+            "remetente_id": 3,
+            "destinatario_id": 2,
+            "data": "2023-07-06",
+            "conteudo": "Perfeito, até lá!"
+        },
+        {
+            "remetente_id": 2,
+            "destinatario_id": 5,
+            "data": "2023-07-07",
+            "conteudo": "Oi Eva, como vai?"
+        },
+        {
+            "remetente_id": 5,
+            "destinatario_id": 2,
+            "data": "2023-07-07",
+            "conteudo": "Oi Bob, tudo bem por aqui!"
+        },
+        {
+            "remetente_id": 3,
+            "destinatario_id": 4,
+            "data": "2023-07-08",
+            "conteudo": "Diana, preciso de uma ajuda."
+        },
+        {
+            "remetente_id": 4,
+            "destinatario_id": 3,
+            "data": "2023-07-08",
+            "conteudo": "Claro, Charlie. O que houve?"
+        },
+        {
+            "remetente_id": 3,
+            "destinatario_id": 4,
+            "data": "2023-07-08",
+            "conteudo": "Pode me emprestar aquele livro?"
+        },
+        {
+            "remetente_id": 4,
+            "destinatario_id": 3,
+            "data": "2023-07-08",
+            "conteudo": "Sem problemas, passo aí mais tarde."
+        },
+        {
+            "remetente_id": 4,
+            "destinatario_id": 5,
+            "data": "2023-07-09",
+            "conteudo": "Eva, vamos ao cinema?"
+        },
+        {
+            "remetente_id": 5,
+            "destinatario_id": 4,
+            "data": "2023-07-09",
+            "conteudo": "Boa ideia, Diana! Qual filme?"
+        },
+        {
+            "remetente_id": 4,
+            "destinatario_id": 5,
+            "data": "2023-07-09",
+            "conteudo": "Que tal o novo de ação?"
+        },
+        {
+            "remetente_id": 5,
+            "destinatario_id": 4,
+            "data": "2023-07-09",
+            "conteudo": "Perfeito! Nos vemos lá."
+        },
+        {
+            "remetente_id": 5,
+            "destinatario_id": 6,
+            "data": "2023-07-10",
+            "conteudo": "Frank, como foi o trabalho?"
+        },
+        {
+            "remetente_id": 6,
+            "destinatario_id": 5,
+            "data": "2023-07-10",
+            "conteudo": "Oi Eva, foi bem puxado hoje."
+        },
+        {
+            "remetente_id": 6,
+            "destinatario_id": 7,
+            "data": "2023-07-11",
+            "conteudo": "Grace, vamos almoçar amanhã?"
+        },
+        {
+            "remetente_id": 7,
+            "destinatario_id": 6,
+            "data": "2023-07-11",
+            "conteudo": "Claro, Frank! Onde?"
+        },
+        {
+            "remetente_id": 6,
+            "destinatario_id": 7,
+            "data": "2023-07-11",
+            "conteudo": "No restaurante novo do centro?"
+        },
+        {
+            "remetente_id": 7,
+            "destinatario_id": 6,
+            "data": "2023-07-11",
+            "conteudo": "Ótimo, nos encontramos lá!"
+        }
+    ]
+}
