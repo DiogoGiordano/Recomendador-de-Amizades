@@ -46,7 +46,7 @@ def connect_friends_in_graph():
                 peso = calculate_friendship_time(tempo.days)
 
                 # adiciona uma aresta que conecta os dois nodos
-                grafo.add_edge(node, dataset_amizades[i]["usuario2_id"])
+                grafo.add_edge(node, dataset_amizades[i]["usuario2_id"], color='r', weight=peso)
 
                 # prints de teste
                 # printa o nome do usuario da iteracao e o id dos dois usuarios que possuem uma amizade
@@ -70,11 +70,17 @@ def present(grafo, lista):
     # posicao das arestas
     pos = nx.spring_layout(grafo)
 
-    # desenha o grafo
-    nx.draw(grafo, pos, with_labels=True)
+    # cores e peso
+    colors = nx.get_edge_attributes(grafo, 'color').values()
+    weights = nx.get_edge_attributes(grafo, 'weight').values()
 
-    # peso das arestas
-    nx.draw_networkx_edge_labels(grafo, pos, edge_labels=edge_labels)
+    # apresenta o grafo
+    pos = nx.circular_layout(grafo)
+    nx.draw(grafo, pos,
+            edge_color=colors,
+            width=list(weights),
+            with_labels=True,
+            node_color='lightgreen')
 
     plt.show()
 
@@ -108,7 +114,18 @@ if __name__ == '__main__':
     for i in grafo.nodes():
         print("Nome do usuario: ", grafo.nodes[i]["nome"])
 
+
+    lista_mensagem = []
+
+    for i in range(len(dataset["mensagens"])):
+        for node in grafo.nodes():
+            if node == dataset["mensagens"][i]["remetente_id"]:
+                lista_mensagem.append((dataset["mensagens"][i]["remetente_id"], dataset["mensagens"][i]["destinatario_id"]))
+
     # recebe a lista retornada
     lista = connect_friends_in_graph()
-    
+
+
+
+
     present(grafo, lista)
